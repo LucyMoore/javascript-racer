@@ -1,0 +1,29 @@
+.racer_table tr {
+  
+  border-bottom: 2px; solid; black;
+  border-top: 2px, solid, black;
+}
+
+.racer_table td {
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  
+
+
+}
+
+.racer_table td.active {
+  background-color: yellow;
+}
+
+.test{
+  border: 2px solid red;
+}
+#player1_strip {
+  outline: thin solid black;
+}
+
+#player2_strip {
+  outline: thin solid black;
+}
