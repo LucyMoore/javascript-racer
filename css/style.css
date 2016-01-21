@@ -1,29 +1,25 @@
-.racer_table tr {
-  
-  border-bottom: 2px; solid; black;
-  border-top: 2px, solid, black;
+body{
+  font-family: "Arial";
 }
 
-.racer_table td {
-  background-color: white;
-  height: 20px;
+table{
+    border-collapse:collapse;
+}
+tr {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+
+}
+td{
   width: 20px;
-  
-
-
+  height: 20px;
 }
-
-.racer_table td.active {
-  background-color: yellow;
+td.start{
+  border-right: 1px solid red; 
+  width: 10px;
 }
-
-.test{
-  border: 2px solid red;
-}
-#player1_strip {
-  outline: thin solid black;
-}
-
-#player2_strip {
-  outline: thin solid black;
+td.active{
+  background-color: yellow; 
+  border-right: 1px solid none;
+  width: 10px;
 }
