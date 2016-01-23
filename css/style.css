@@ -28,3 +28,7 @@ td.start{
   border-right: 1px solid none;
   width: 10px;
 }
+
+.buttonDiv{
+  padding: 20px;
+}

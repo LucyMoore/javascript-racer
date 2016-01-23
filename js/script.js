@@ -22,44 +22,51 @@ $(document).keyup(function(){                         //add event listener
 });
 
 
-  function movePlayer1(keyPressed){                // this is how we move player 1 
-    if(keyPressed === 81) {                         //check if the key pressed was 'q'
+  function movePlayer1(keyPressed){                   // this is how we move player 1 
+    if(keyPressed === 81) {                           //check if the key pressed was 'q'
       if(movesP1< trackLength){                       //check current moves are less than the track length
-      var x = document.querySelector('.active');   //
-        if (x) {                                   //if x is a Truthy 
-          var nextX = x.nextElementSibling;        //get the next <td> in the table row 
-          nextX.setAttribute('class', 'active');    //set the class on the next <td> to "active"
-          x.setAttribute('class', '');              //remove the class from the current <td>
-          movesP1++;                                    //increase moves by 1
+      var x = document.querySelector('.active');      //
+        if (x) {                                      //if x is a Truthy 
+          var nextX = x.nextElementSibling;           //get the next <td> in the table row 
+          nextX.setAttribute('class', 'active');      //set the class on the next <td> to "active"
+          x.setAttribute('class', '');                //remove the class from the current <td>
+          movesP1++;                                  //increase moves by 1
         }
       }
       else{
-        winner("player1");                          //if number of moves is more than the track length print winner
+        winner("player1");                            //if number of moves is more than the track length print winner
       }
     }            
   };
 
 
-function movePlayer2(keyPressed){                // this is how we move player 1 
-    if(keyPressed === 80) {                         //check if the key pressed was 'q'
-      if(movesP2 < trackLength){                       //check current moves are less than the track length
-      var x = document.querySelector('.active2');   //
-        if (x) {                                   //if x is a Truthy 
-          var nextX = x.nextElementSibling;        //get the next <td> in the table row 
-          nextX.setAttribute('class', 'active2');    //set the class on the next <td> to "active"
-          x.setAttribute('class', '');              //remove the class from the current <td>
+function movePlayer2(keyPressed){                     // this is how we move player 1 
+    if(keyPressed === 80) {                           //check if the key pressed was 'q'
+      if(movesP2 < trackLength){                      //check current moves are less than the track length
+      var x = document.querySelector('.active2');     //get active class assign location to x 
+        if (x) {                                      //if x is a Truthy 
+          var nextX = x.nextElementSibling;           //get the next <td> in the table row 
+          nextX.setAttribute('class', 'active2');     //set the class on the next <td> to "active"
+          x.setAttribute('class', '');                //remove the class from the current <td>
         movesP2++;                                    //increase moves by 1
         }
       }
       else{
-        winner("player 2");                          //if number of moves is more than the track length print winner
+        winner("player 2");                           //if number of moves is more than the track length print winner
       }
     }            
   };
   
 
- function winner(player){
-    window.alert( player +  " WINS!!");
-    location.reload();
+ function winner(player){                             //when someone wins display window
+    window.alert( player +  " WINS!!");               // window pops up and anounces winner
+    location.reload();                                //when the user clicks ok the page reloads
   }
  
+/*document.getElementById("#player3").addEventListener("click", addPlayer());
+
+function addPlayer(){
+  $("#test").append("<tr>");
+
+
+}
