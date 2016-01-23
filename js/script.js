@@ -3,7 +3,7 @@ var movesP1 = 0;
 var movesP2 = 0;
 
 
-$( document ).ready(function() {                      //when page is fully loaded script can start
+$(document).ready(function() {                      //when page is fully loaded script can start
   trackLength = prompt("set the track length", "");   //prompt the user to set a track length
   setTrack(trackLength);                              //call the function that sets the track
  });             
@@ -63,4 +63,4 @@ function movePlayer2(keyPressed){                     // this is how we move pla
     location.reload();                                //when the user clicks ok the page reloads
   }
  
-}
+
