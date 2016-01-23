@@ -1,8 +1,18 @@
-$( document ).ready(function() { });              //when page is fully loaded script can start
-
-var trackLength = 3 
-var textValue1 = "";                              //track length is predetermined
+var textValue1 = "";                              //initiate global values
 var textValue2 = "";
+var trackLength = 0;
+
+$( document ).ready(function() {                   //when page is fully loaded script can start
+  trackLength = prompt("set the track length", "");
+  setTrack(trackLength);
+ });             
+
+function setTrack(length){
+  for(i=0;i<trackLength;i++){
+    $("#player1_strip").append("<td>");
+    $("#player2_strip").append("<td>");
+  }
+};
 
 $(document).keyup(function(){                     //add event listener
   var keyPressed = event.keyCode;                 //record what key was pressed
