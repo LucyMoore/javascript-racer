@@ -63,10 +63,4 @@ function movePlayer2(keyPressed){                     // this is how we move pla
     location.reload();                                //when the user clicks ok the page reloads
   }
  
-/*document.getElementById("#player3").addEventListener("click", addPlayer());
-
-function addPlayer(){
-  $("#test").append("<tr>");
-
-
 }
