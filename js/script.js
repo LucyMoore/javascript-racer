@@ -59,8 +59,9 @@ function movePlayer2(keyPressed){                     // this is how we move pla
   
 
  function winner(player){                             //when someone wins display window
-    window.alert( player +  " WINS!!");               // window pops up and anounces winner
+    window.alert( player +  " WINS!!");               // window pops up anouncing winner
     location.reload();                                //when the user clicks ok the page reloads
   }
  
 
+ 
