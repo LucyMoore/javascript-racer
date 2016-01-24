@@ -15,7 +15,7 @@ function setTrack(length){                            //this is how we set the t
   }
 };
 
-$(document).keyup(function(){                         //add event listener
+$(document).keyup(function( event){                         //add event listener
   var keyPressed = event.keyCode;                     //record what key was pressed
   movePlayer1(keyPressed);                            //pass to each player move function
   movePlayer2(keyPressed);
