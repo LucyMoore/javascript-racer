@@ -63,6 +63,24 @@ function movePlayer2(keyPressed){                     // this is how we move pla
     location.reload();                                //when the user clicks ok the page reloads
   }
  
- 
 
- 
+
+function chooseVehicle(){
+  var select = document.getElementById('choice').value; 
+
+  switch(select){
+
+  case "bike":
+    $(".active").css({"background-image":"url(../img/bike.png)"});//change picture
+    break;
+
+  case "llama":
+    document.getElementById("activeid").style.backgroundImage = "url('../img/bike.png')";
+    break;
+  
+  case "car":
+    $(".active").css({"background": "url(../img/car.png)"});
+    break;
+  }
+
+ };

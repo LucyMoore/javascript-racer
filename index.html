@@ -20,8 +20,7 @@
     <H1>Ready, Set, GO!</H1>
     <div class="vehicle">
       <H3>player 1 use the Q key</H3>
-       <select>
-          <option value="blank">Choose Vehicle</option>
+       <select id="choice" onchange="chooseVehicle()">
           <option value="car">car</option>
           <option value="bike">bike</option>
           <option value="llama">llama</option>
@@ -30,10 +29,9 @@
     <div class="vehicle">
       <H3>player 2 use the P key</H3>
         <select>
-          <option value="blank">Choose Vehicle</option>
-          <option value="car">car</option>
-          <option value="bike">bike</option>
-          <option value="llama">llama</option>
+          <option value="car2">car</option>
+          <option value="bike2">bike</option>
+          <option value="llama2">llama</option>
         </select>
     </div>
   </div>
@@ -42,7 +40,7 @@
     <table> 
       <tr id="player1_strip">
         <td>P1</td>
-        <td class ="active"></td>
+        <td class ="active" id="activeid"></td>
       </tr>
       <tr id="player2_strip">
         <td>P2</td>
@@ -50,6 +48,8 @@
       </tr>
     </table>
   </div>
+
+  <div class="test"> </div>
 
 </body>
 </html>

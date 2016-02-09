@@ -1,6 +1,5 @@
 body{
   font-family: "Arial";
-
 }
 
 table{
@@ -20,14 +19,16 @@ td.start{
   width: 10px;
 }
 .active{
-  background-color: yellow; 
+  background-image: url(../img/car.png); 
+  background-repeat: no-repeat;
   border-right: 1px solid none;
-  width: 20px;
+  width: 35px;
 }
 .active2{
-  background-color: yellow; 
+  background-image: url(../img/car.png); 
+  background-repeat: no-repeat;
   border-right: 1px solid none;
-  width: 20px;
+  width: 35px;
 }
 
 .buttonDiv{
@@ -41,4 +42,10 @@ select{
   height: 20px;
   margin-left: 10px;
   margin-top: 20px;
+}
+
+.test{
+height: 100px;
+width: 100px;
+border: 1px solid black;
 }
