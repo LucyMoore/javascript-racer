@@ -63,5 +63,6 @@ function movePlayer2(keyPressed){                     // this is how we move pla
     location.reload();                                //when the user clicks ok the page reloads
   }
  
+ 
 
  

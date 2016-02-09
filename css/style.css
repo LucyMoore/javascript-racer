@@ -12,7 +12,7 @@ tr {
 
 }
 td{
-  width: 10px;
+  width: 20px;
   height: 20px;
 }
 td.start{
@@ -27,7 +27,7 @@ td.start{
 .active2{
   background-color: yellow; 
   border-right: 1px solid none;
-  width: 10px;
+  width: 20px;
 }
 
 .buttonDiv{
@@ -37,7 +37,7 @@ td.start{
 .vehicle{
   display: flex;
 }
-button{
+select{
   height: 20px;
   margin-left: 10px;
   margin-top: 20px;
